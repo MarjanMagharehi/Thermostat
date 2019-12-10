@@ -40,6 +40,17 @@ class Thermostat{
             return "Power saving mode is on. Now moving to the maximum of 25 degrees.";
         }
   }
+  energyUsage() {
+    if(this.temperature < 18){
+      return "low-usage";
+    }
+    else if(this.temperature < 25 && this.temperature >= 18){
+      return "medium-usage";
+    }
+    else {
+      return "high-usage";
+    }
+  }
     reset(){
       this.temperature = 20;
     };
