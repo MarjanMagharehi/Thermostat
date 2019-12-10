@@ -1,0 +1,20 @@
+body {
+}
+#buttons {
+    /* margin-top: 1rem; */
+    /* font-size: 100px; */
+}
+button {
+    padding: 20px;
+}
+#reset{
+  /* border-radius: 50% */
+
+}
+
+
+#reset, #increase, #decrease, #pso {
+    border-radius: 30%;
+    font-family: Times, Helvetica, sans-serif;
+    font-size: 100%;
+}
