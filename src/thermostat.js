@@ -30,6 +30,7 @@ class Thermostat{
     power_saving_off() {
         this.power_saving_mode = false;
         this.maximumTemperature = 32;
+        return "Power saving mode has been turned off"
     }
     reset(){
       this.temperature = 20;
