@@ -34,5 +34,9 @@ describe("Thermostat", function(){
         thermostat.power_saving_off();
         expect(thermostat.maximumTemperature).toEqual(32);
     });
-
+  it("Resets the temperature to 20", function(){
+    thermostat.reset();
+    expect(thermostat.temperature).toEqual(20);
+  });
+  
 });
