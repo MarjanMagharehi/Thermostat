@@ -4,6 +4,7 @@ class Thermostat{
   constructor(){
     this.temperature = 20;
     this.minimumTemperature = 10;
+    this.power_saving_mode = true;
   }
     up(temperature){
       this.temperature += temperature;
