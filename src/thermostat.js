@@ -31,4 +31,7 @@ class Thermostat{
         this.power_saving_mode = false;
         this.maximumTemperature = 32;
     }
+    reset(){
+      this.temperature = 20;
+    };
 }
