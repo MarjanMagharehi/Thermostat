@@ -17,5 +17,9 @@ describe("Thermostat", function(){
   it("decreases the temperature", function(){
     thermostat.down(5);
     expect(thermostat.temperature).toEqual(15);
+  });
+  it("minimum temperature is 10 degrees", function(){
+    thermostat.down(11);
+    expect(thermostat.temperature).toEqual(10);
   })
 });
