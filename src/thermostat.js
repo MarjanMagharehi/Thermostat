@@ -27,4 +27,8 @@ class Thermostat{
       }
       return `The temperature is ${this.temperature} degrees`
     }
+    power_saving_off() {
+        this.power_saving_mode = false;
+        this.maximumTemperature = 32;
+    }
 }

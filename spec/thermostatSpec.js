@@ -32,7 +32,7 @@ describe("Thermostat", function(){
   });
   it("If power saving mode is off, the maximum temperature to be 32", function(){
         thermostat.power_saving_off();
-        expect(thermostat.max_temp).toEqual(32);
+        expect(thermostat.maximumTemperature).toEqual(32);
     });
 
 });
