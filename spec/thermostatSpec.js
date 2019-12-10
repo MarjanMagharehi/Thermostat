@@ -44,4 +44,8 @@ describe("Thermostat", function(){
        thermostat.power_saving_on();
        expect(thermostat.temperature).toEqual(25);
    });
+   it("Prints the thermostat's current energy usage", function(){
+   thermostat.temp_down(3)
+   expect(thermostat.energyUsage()).toMatch("low-usage");
+    });
 });

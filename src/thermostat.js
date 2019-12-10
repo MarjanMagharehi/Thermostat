@@ -9,11 +9,11 @@ class Thermostat{
   }
     up(temperature){
       this.temperature += temperature;
-      if(this.power_saving_mode = true && this.temperature > this.maximumTemperature) {
+      if(this.power_saving_mode === true && this.temperature > this.maximumTemperature) {
            this.temperature = this.maximumTemperature;
            return "Power saving mode is on. Now moving to the maximum of 25 degrees."
        }
-       else if(this.power_saving_mode = false && this.temperature > this.maximumTemperature) {
+       else if(this.power_saving_mode === false && this.temperature > this.maximumTemperature) {
            this.temperature = this.maximumTemperature;
            return "Power saving mode is off. Now moving to the maximum of 32 degrees."
        }
@@ -35,7 +35,7 @@ class Thermostat{
     power_saving_on() {
         this.power_saving_mode = true;
         this.maximumTemperature = 25;
-        if (this.power_saving_mode == true && this.temperature > this.maximumTemperature) {
+        if (this.power_saving_mode === true && this.temperature > this.maximumTemperature) {
             this.temperature = this.maximumTemperature;
             return "Power saving mode is on. Now moving to the maximum of 25 degrees.";
         }
