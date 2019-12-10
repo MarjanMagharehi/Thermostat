@@ -5,4 +5,5 @@ class Thermostat{
     up(temperature){
       this.temperature += temperature;
     }
+    
 }
