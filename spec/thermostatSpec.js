@@ -40,7 +40,7 @@ describe("Thermostat", function(){
   });
   it("Turns power saving mode on", function(){
        thermostat.power_saving_off();
-       thermostat.temp_up(12);
+       thermostat.up(12);
        thermostat.power_saving_on();
        expect(thermostat.temperature).toEqual(25);
    });
